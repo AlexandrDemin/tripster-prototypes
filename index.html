@@ -92,11 +92,11 @@
             background-image: var(--background-image, none);
             width: 100%;
             height: 100%;
-            padding: 200px;
-            margin: -200px;
+            padding: 80px;
+            margin: -80px;
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            filter: blur(200px) brightness(0.7) contrast(1.5) saturate(0.5);
+            filter: blur(80px) brightness(0.7) contrast(1.5) saturate(0.5);
             opacity: var(--opacity, 0);
             transition: var(--transition-speed, 200ms);
             will-change: contents;
@@ -2703,7 +2703,7 @@
             const lgBackdrop = document.getElementById('lg-backdrop-1')
             lgBackdrop.style.setProperty('--background-image', 'url("' + imgUrl + '")')
             lgBackdrop.style.setProperty('--opacity', '1')
-            lgBackdrop.style.setProperty('--transition-speed', '300ms')
+            lgBackdrop.style.setProperty('--transition-speed', '1000ms')
         });
         const lgSettings = {
                 licenseKey: '0000-0000-000-0000',
