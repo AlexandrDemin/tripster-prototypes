@@ -2694,7 +2694,7 @@
         lg.addEventListener('lgBeforeSlide', (event) => {
             const lgBackdrop = document.getElementById('lg-backdrop-1')
             lgBackdrop.style.setProperty('--opacity', '0.5')
-            lgBackdrop.style.setProperty('--transition-speed', '400ms')
+            lgBackdrop.style.setProperty('--transition-speed', '100ms')
         });
         lg.addEventListener('lgAfterSlide', (event) => {
             const index = event.detail.index
@@ -2703,7 +2703,7 @@
             const lgBackdrop = document.getElementById('lg-backdrop-1')
             lgBackdrop.style.setProperty('--background-image', 'url("' + imgUrl + '")')
             lgBackdrop.style.setProperty('--opacity', '1')
-            lgBackdrop.style.setProperty('--transition-speed', '3000ms')
+            lgBackdrop.style.setProperty('--transition-speed', '300ms')
         });
         const lgSettings = {
                 licenseKey: '0000-0000-000-0000',
