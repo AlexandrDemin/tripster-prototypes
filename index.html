@@ -112,17 +112,19 @@
           color: white !important;
         }
         .short-review-text {
-          display: block
+          display: none
         }
         .full-review-text {
           display: none;
         }
+        @media (min-width: 400px) {
+          .short-review-text {
+            display: block
+          }
+        }
         @media (min-width: 600px) {
           .thumbs {
             grid-template-columns: repeat(3, 1fr);
-          }
-          .with-caption .lg-image {
-            margin-top: 0;
           }
         }
         @media (min-width: 900px) {
