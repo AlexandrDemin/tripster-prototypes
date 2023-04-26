@@ -104,7 +104,7 @@
             background-repeat: no-repeat;
             filter: blur(80px) brightness(0.7) contrast(1.5) saturate(0.5);
             opacity: var(--opacity, 1);
-            transition: var(--transition-speed, 100ms);
+            transition: var(--transition-speed, 0);
         }
         .lg-image {
           box-shadow: 0 0 50px rgba(0,0,0, 0.15);
@@ -294,7 +294,6 @@
               const imgUrl = imgs[index].thumb
               const lgBackdrop = document.getElementById('lg-backdrop-1')
               lgBackdrop.style.setProperty('--background-image', 'url("' + imgUrl + '")')
-              lgBackdrop.style.setProperty('--transition-speed', '50ms')
             });
             $lg.addEventListener('lgAfterSlide', (event) => {
               
